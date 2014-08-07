@@ -9,8 +9,7 @@ from suds_patch import _bodycontent
 from suds.bindings import document as _document
 _document.Document.bodycontent = _bodycontent
 # end runtime patching of suds
-
-from client import ET_Client
+from .client import ET_Client
 
 # Import all the wrapper objects
-from objects import *
+from .objects import *
